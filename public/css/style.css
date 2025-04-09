@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#294c81;
+    text-align: center;
+}
+.signbox{
+    background-color:#b9d5ff;
+    border:1px solid #72a2a2;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top:160px;
+    border-radius: 10px;
+    text-align: center;
+}
+.signbox a{
+    text-decoration: none;
+}
+.signbox a:hover{
+    text-decoration: underline;
+}
+h2,.signbox p,input,.signbtn,textarea{
+    width: 80%;
+    height: 30px;
+    margin: 5px 35px;
+    font-size: 17px;
+    text-align:center;   
+}
+textarea{
+    height: auto;
+}
+.signbtn{
+    padding-bottom: 30px;
+}
+h2{
+    padding-top:50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+button{
+    background-color:#294c81;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 17px;
+    border: 1px solid darkslategray;
+}
+
+
+
+
+

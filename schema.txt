@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS sqlinjection;
+
+USE shop;
+
+DROP TABLE IF EXISTS products;
+
+CREATE TABLE products (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  price DECIMAL(10,2),
+  description TEXT
+);
+
+INSERT INTO products (name, price, description) VALUES
+('Phone', 299.99, 'Smartphone with 5G'),
+('Laptop', 899.99, 'Gaming laptop'),
+('Tablet', 399.99, 'Android tablet');
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(100) NOT NULL
+);
+
+INSERT INTO users (username, password) VALUES
+('alice', 'password123'),
+('bob', 'qwerty'),
+('charlie', 'charlie@123'),
+('david', 'davidpass'),
+('emma', 'emma456'),
+('frank', 'frankie'),
+('grace', 'gracepass'),
+('henry', 'henry123'),
+('irene', 'irenepass'),
+('john', 'johnny!');
